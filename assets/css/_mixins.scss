@@ -1,0 +1,26 @@
+//Main body layout
+@mixin bodyLayout{
+  margin-top :50px;
+  font-family: $raleway;
+  font-size: 16px;
+  background: url('../img/tile.jpg')top left repeat;
+
+}
+
+@mixin sexyText{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+@mixin niceHeaders{
+    @include sexyText;
+    font-weight: bold;
+
+}
+
+@mixin hero{
+  background: url('../img/hero-bg.jpg')50% 0 no-repeat fixed;
+  min-height: 500px;
+  padding: 40px 0;
+  color: white;
+}
