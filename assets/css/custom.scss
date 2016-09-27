@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 
+//General layout
+
 /*Body layout*/
 body{
   @include bodyLayout;
@@ -33,17 +35,80 @@ h3{
   }
 }
 
-.price-timeline{
-  margin: 30px 0 60px;
+.price-timeline {
+  padding: 14px;
   text-align: center;
+}
 
+.price {
+  vertical-align: top;
+  background-color: $bluegray;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  max-height: 100px;
+}
+
+.btn{
+  font-weight: bold;
+}
+
+.btn-danger{
+  border-color: white;
+  background-color: $orange;
+}
+
+.price-sphere{
+  @include price-sphere;
+}
+
+/* Small screens layout*/
+@include small-screens{
   .price{
-    display: inline-block;
-    margin: 0 2% 0 0;
-    width: 30%;
-    background: $bluegray;
+    display: block;
+    width: 100%;
+  }
+
+  .align-center{
+    text-align: center;
   }
 }
+
+/* Apple and medium screens layout*/
+@include apple-and-medium-screens{
+  .price{
+    display: inline-block;
+    width: 30%;
+    max-height: 115px;
+
+    .price-sphere{
+      margin-left: -50px;
+      font-size: 14px;
+      width: 100px;
+    }
+  }
+}
+/* Large screens layout*/
+@include large-screens{
+  .price{
+    display: inline-block;
+    width: 30%;
+
+  }
+}
+
+@include xlarge-screens{
+  .price{
+    max-height: 90px;
+  }
+}
+
+
+
+
+
+
 
 .logo{
   width: 400px;

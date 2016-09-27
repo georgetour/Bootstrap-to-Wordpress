@@ -32,14 +32,62 @@ h3 {
     margin-top: 30px; }
 
 .price-timeline {
-  margin: 30px 0 60px;
+  padding: 14px;
   text-align: center; }
-  .price-timeline .price {
-    display: inline-block;
-    margin: 0 2% 0 0;
-    width: 30%;
-    background: #3e4249; }
 
+.price {
+  vertical-align: top;
+  background-color: #3e4249;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  max-height: 100px; }
+
+.btn {
+  font-weight: bold; }
+
+.btn-danger {
+  border-color: white;
+  background-color: #ca690b; }
+
+.price-sphere {
+  position: absolute;
+  width: 120px;
+  text-align: center;
+  line-height: 70px;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -60px;
+  border-radius: 100%;
+  background-color: black; }
+
+/* Small screens layout*/
+@media screen and (max-width: 767px) {
+  .price {
+    display: block;
+    width: 100%; }
+
+  .align-center {
+    text-align: center; } }
+/* Apple and medium screens layout*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .price {
+    display: inline-block;
+    width: 30%;
+    max-height: 115px; }
+    .price .price-sphere {
+      margin-left: -50px;
+      font-size: 14px;
+      width: 100px; } }
+/* Large screens layout*/
+@media screen and (min-width: 1025px) {
+  .price {
+    display: inline-block;
+    width: 30%; } }
+@media screen and (min-width: 1200px) {
+  .price {
+    max-height: 90px; } }
 .logo {
   width: 400px; }
 
