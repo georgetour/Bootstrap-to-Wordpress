@@ -1,7 +1,9 @@
 @import "variables";
 @import "mixins";
 
-//General layout
+.test-border{
+  border :1px solid black;
+}
 
 /*Body layout*/
 body{
@@ -63,11 +65,35 @@ h3{
   @include price-sphere;
 }
 
+#quoteLine {
+  padding: 15px;
+  background-color: $bluegray;
+  max-height: 72px;
+  color: white;
+  @include  sexyText;
+  font-size: 1.2em;
+}
+
+
+.lead{
+ margin-top: 8px;
+}
+
+button, input, .btn, a.btn{
+  @include sexyText;
+  color: white;
+}
+
+.align-center{
+  text-align: center;
+}
+
 /* Small screens layout*/
 @include small-screens{
   .price{
     display: block;
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .align-center{
@@ -81,6 +107,7 @@ h3{
     display: inline-block;
     width: 30%;
     max-height: 115px;
+    margin-bottom: 50px;
 
     .price-sphere{
       margin-left: -50px;
