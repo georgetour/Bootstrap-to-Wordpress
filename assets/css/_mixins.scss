@@ -1,6 +1,6 @@
 //Main body layout
 @mixin bodyLayout{
-  margin-top :50px;
+
   font-family: $raleway;
   font-size: 16px;
   background: url('../img/tile.jpg')top left repeat;
@@ -19,11 +19,13 @@
 }
 
 @mixin hero{
-  background: url('../img/hero-bg.jpg') no-repeat center center   fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
+  min-height: 500px;
+
+  position: relative;
+  display: table;
+  width: 100%;
+
   padding: 40px 0;
   color: white;
 }

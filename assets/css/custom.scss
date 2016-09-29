@@ -5,8 +5,7 @@
   border :1px solid black;
 }
 html {
-  height: 100%;
-  min-height: 100%;
+
 }
 /*Body layout*/
 body{
@@ -33,7 +32,7 @@ h3{
 
 .img-logo{
   width:200px;
-  margin-left:20px;
+
 }
 
 /*Hero-------*/
@@ -41,9 +40,17 @@ h3{
   @include hero;
   @include  sexyText;
   .hero-text{
-  margin-top: 30px;
+    margin-top: 30px;
   }
 }
+
+#hero article {
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 
 .price-timeline {
   padding: 14px;
@@ -87,14 +94,16 @@ h3{
  margin-top: 8px;
 }
 
+#whatIsWordpress{
+  padding-top: 20px;
+}
+
 button, input, .btn, a.btn{
   @include sexyText;
   color: white;
 }
 
-.align-center{
-  text-align: center;
-}
+
 
 /* Small screens layout*/
 @include small-screens{
@@ -104,14 +113,15 @@ button, input, .btn, a.btn{
     margin-bottom: 50px;
   }
 
-  .align-center{
-    text-align: center;
 
-  }
 }
 
 /* Apple and medium screens layout*/
 @include apple-and-medium-screens{
+  .align-center{
+    text-align: center;
+
+  }
   .price{
     display: inline-block;
     width: 30%;
@@ -132,8 +142,9 @@ button, input, .btn, a.btn{
 
 
   #quoteLine{
-    max-height: 85px;
+    max-height: 90px;
     padding: 10px;
+    @extend .align-center;
   }
 
   .lead{
@@ -146,6 +157,16 @@ button, input, .btn, a.btn{
     display: inline-block;
     width: 30%;
 
+  }
+  #quoteLine{
+    text-align: center;
+  }
+
+  #whatIsWordpress{
+    margin-top: 40px;
+  }
+  .lead{
+    margin-top: 0px;
   }
 }
 
