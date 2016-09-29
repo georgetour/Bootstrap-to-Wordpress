@@ -19,8 +19,11 @@
 }
 
 @mixin hero{
-  background: url('../img/hero-bg.jpg')50% 0 no-repeat fixed;
-  min-height: 500px;
+  background: url('../img/hero-bg.jpg') no-repeat center center   fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   padding: 40px 0;
   color: white;
 }
