@@ -32,7 +32,7 @@ h3 {
   position: relative;
   display: table;
   width: 100%;
-  padding: 40px 0;
+  padding: 50px 0 0 0;
   color: white;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility; }
@@ -89,22 +89,39 @@ h3 {
   margin-top: 8px; }
 
 #whatIsWordpress {
-  padding-top: 20px; }
+  padding-top: 20px;
+  text-align: center; }
 
 button, input, .btn, a.btn {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
   color: white; }
 
+.align-center {
+  text-align: center; }
+
+.section-header {
+  text-align: center; }
+
+.img-center {
+  margin-right: auto;
+  margin-left: auto; }
+
+#whoBenefits {
+  background-color: white; }
+
 /* Small screens layout*/
 @media screen and (max-width: 767px) {
   .price {
     display: block;
     width: 100%;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+
+  #whatIsWordpress {
+    margin-top: 50px; } }
 /* Apple and medium screens layout*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  .align-center, #quoteLine {
+  .align-center {
     text-align: center; }
 
   .price {
@@ -123,7 +140,8 @@ button, input, .btn, a.btn {
 
   #quoteLine {
     max-height: 90px;
-    padding: 10px; }
+    padding: 10px;
+    text-align: center; }
 
   .lead {
     margin-top: 0px; } }

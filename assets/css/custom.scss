@@ -96,6 +96,7 @@ h3{
 
 #whatIsWordpress{
   padding-top: 20px;
+  text-align: center;
 }
 
 button, input, .btn, a.btn{
@@ -103,7 +104,21 @@ button, input, .btn, a.btn{
   color: white;
 }
 
+.align-center{
+  text-align: center;
+}
 
+.section-header{
+  text-align: center;
+}
+.img-center{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#whoBenefits{
+  background-color: white;
+}
 
 /* Small screens layout*/
 @include small-screens{
@@ -113,6 +128,10 @@ button, input, .btn, a.btn{
     margin-bottom: 50px;
   }
 
+  #whatIsWordpress{
+    margin-top: 50px;
+
+  }
 
 }
 
@@ -144,7 +163,7 @@ button, input, .btn, a.btn{
   #quoteLine{
     max-height: 90px;
     padding: 10px;
-    @extend .align-center;
+    text-align: center;
   }
 
   .lead{
