@@ -23,7 +23,7 @@ h1{
 }
 
 h1,h2{
-  margin: 10px 0 40px;
+  margin: 10px 0 30px;
 }
 
 h3{
@@ -62,9 +62,10 @@ h3{
   background-color: $bluegray;
   position: relative;
   display: inline-block;
-  padding-bottom: 50px;
+
+  height: 90px;
   box-sizing: border-box;
-  max-height: 100px;
+
 }
 
 .btn{
@@ -91,11 +92,10 @@ h3{
 
 
 .lead{
- margin-top: 8px;
+ padding-top: 7px;
 }
 
-#whatIsWordpress{
-  padding-top: 20px;
+#whatIsWordpress,#final-features{
   text-align: center;
 }
 
@@ -110,15 +110,54 @@ button, input, .btn, a.btn{
 
 .section-header{
   text-align: center;
+
 }
+#whatIsWordpress,#whoBenefits,#wordpress-feautures,#final-features{
+  padding: 30px 0px 30px 0px;
+}
+
+
+
+
+#whoBenefits{
+  background-color: white;
+}
+
+#wordpress-feautures{
+  text-align: center;
+  background-color: $bluegray;
+  color: white;
+}
+
+.features{
+  font-size: 0.9em;
+}
+
+i.features-sprites {
+  @include features-sprites;
+}
+.features-sprites.ci-computer{background-position: (-40px 0);  }
+.features-sprites.ci-watch{background-position: (-200px 0);  }
+.features-sprites.ci-facebook{background-position: (-160px 0);  }
+.features-sprites.ci-documentation{ background-position: (-120px 0);  }
+.features-sprites.ci-ecommerce{  background-position: (-80px 0); }
+
+
 .img-center{
   margin-right: auto;
   margin-left: auto;
 }
 
-#whoBenefits{
-  background-color: white;
+.features-img-boxes{
+  margin: 30px 0px 5px 0;
+  height: 110px;
 }
+.features-img-wordpress{
+  padding: 50px 0px 5px 0;
+  height: 140px;/*140px is the same as the total height .features-img-boxes with margin*/
+}
+
+
 
 /* Small screens layout*/
 @include small-screens{
@@ -128,11 +167,15 @@ button, input, .btn, a.btn{
     margin-bottom: 50px;
   }
 
-  #whatIsWordpress{
-    margin-top: 50px;
-
+  #quoteLine{
+    max-height: 140px;
+    padding: 10px;
+    text-align: center;
   }
 
+  h4{
+    font-size: 1.1em;
+  }
 }
 
 /* Apple and medium screens layout*/
@@ -144,7 +187,7 @@ button, input, .btn, a.btn{
   .price{
     display: inline-block;
     width: 30%;
-    max-height: 115px;
+    height: 120px;
     margin-bottom: 50px;
 
     .price-sphere{
@@ -161,7 +204,7 @@ button, input, .btn, a.btn{
 
 
   #quoteLine{
-    max-height: 90px;
+    max-height: 120px;
     padding: 10px;
     text-align: center;
   }
@@ -181,9 +224,6 @@ button, input, .btn, a.btn{
     text-align: center;
   }
 
-  #whatIsWordpress{
-    margin-top: 40px;
-  }
   .lead{
     margin-top: 0px;
   }

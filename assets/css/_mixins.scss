@@ -18,6 +18,13 @@
 
 }
 
+@mixin features-sprites{
+  display:inline-block;
+  height: 40px;
+  width: 40px;
+  background: url("../img/icon-sprite2.png")no-repeat;
+}
+
 @mixin hero{
   background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
   min-height: 500px;
