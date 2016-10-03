@@ -25,6 +25,9 @@ h3 {
 .img-logo {
   width: 200px; }
 
+.displayInlineBlock {
+  display: inline-block; }
+
 /*Hero-------*/
 #hero {
   background: url("../img/hero-bg.jpg") 50% 0 repeat fixed;
@@ -101,8 +104,9 @@ button, input, .btn, a.btn {
 .section-header {
   text-align: center; }
 
-#whatIsWordpress, #whoBenefits, #wordpress-feautures, #final-features {
-  padding: 30px 0px 30px 0px; }
+#whatIsWordpress, #whoBenefits, #wordpress-feautures, #final-features,
+#youtube-video, #developer {
+  padding: 30px 0px 40px 0px; }
 
 #whoBenefits {
   background-color: white; }
@@ -149,6 +153,15 @@ i.features-sprites {
   height: 140px;
   /*140px is the same as the total height .features-img-boxes with margin*/ }
 
+#youtube-video {
+  background: url("../img/stuff-bg.jpg") 50% 100% repeat fixed;
+  background-size: cover;
+  color: white; }
+
+#developer {
+  text-align: left;
+  background-color: white; }
+
 /* Small screens layout*/
 @media screen and (max-width: 767px) {
   .price {
@@ -162,7 +175,13 @@ i.features-sprites {
     text-align: center; }
 
   h4 {
-    font-size: 1.1em; } }
+    font-size: 1.1em; }
+
+  #developer {
+    text-align: center; }
+
+  .developer-name {
+    text-align: left; } }
 /* Apple and medium screens layout*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .align-center {
