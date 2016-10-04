@@ -60,6 +60,56 @@ h3 {
   height: 90px;
   box-sizing: border-box; }
 
+.modal-body {
+  background: url("../img/tile.jpg") top left repeat; }
+
+.fa {
+  font-size: 20px; }
+
+.badge.social.linkedin:hover {
+  background-color: #0000e6; }
+
+.badge.social.github:hover {
+  background-color: #5129a3; }
+
+.num {
+  display: table;
+  background-color: #ca690b;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  height: 140px;
+  width: 140px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  margin: 0 auto; }
+
+/*WITH THIS TRICK AND IF THE PARENT OF .num-content IS DISPLAY TABLE
+VERTICAL ALIGN WORKS PERFECTLY*/
+#developer .num .num-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+#developer .num span {
+  display: block;
+  font-size: 15px;
+  font-weight: normal; }
+
+.social {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  padding: 10px; }
+
+.social-icons {
+  padding-top: 15px; }
+
 .btn {
   font-weight: bold; }
 
@@ -181,7 +231,10 @@ i.features-sprites {
     text-align: center; }
 
   .developer-name {
-    text-align: left; } }
+    text-align: left; }
+
+  .developer-image {
+    margin-top: 20px; } }
 /* Apple and medium screens layout*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .align-center {

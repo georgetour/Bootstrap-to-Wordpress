@@ -72,6 +72,67 @@ h3{
 
 }
 
+.modal-body{
+  background: url("../img/tile.jpg")top left repeat;
+}
+.fa{
+  font-size: 20px;
+
+}
+
+.badge.social.linkedin {
+  &:hover {
+   background-color: darken(blue, 5%);
+  }
+}
+.badge.social.github {
+  &:hover {
+    background-color: darken(mediumpurple, 25%);
+  }
+}
+
+.num{
+  display: table;
+  background-color: $orange;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100% ;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  height: 140px;
+  width: 140px;
+  @include sexyText;
+  margin: 0 auto;
+}
+
+/*WITH THIS TRICK AND IF THE PARENT OF .num-content IS DISPLAY TABLE
+VERTICAL ALIGN WORKS PERFECTLY*/
+#developer .num .num-content{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#developer .num span{
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.social{
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100% ;
+  padding: 10px;
+}
+
+.social-icons{
+  padding-top: 15px;
+}
+
 .btn{
   font-weight: bold;
 }
@@ -175,6 +236,8 @@ i.features-sprites {
 }
 
 
+
+
 /* Small screens layout*/
 @include small-screens{
   .price{
@@ -202,7 +265,9 @@ i.features-sprites {
     text-align: left;
   }
 
-
+  .developer-image{
+    margin-top: 20px;
+  }
 
 
 
