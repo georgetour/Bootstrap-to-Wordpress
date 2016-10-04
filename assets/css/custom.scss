@@ -80,58 +80,7 @@ h3{
 
 }
 
-.badge.social.linkedin {
-  &:hover {
-   background-color: darken(blue, 5%);
-  }
-}
-.badge.social.github {
-  &:hover {
-    background-color: darken(mediumpurple, 25%);
-  }
-}
 
-.num{
-  display: table;
-  background-color: $orange;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100% ;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  line-height: 25px;
-  height: 140px;
-  width: 140px;
-  @include sexyText;
-  margin: 0 auto;
-}
-
-/*WITH THIS TRICK AND IF THE PARENT OF .num-content IS DISPLAY TABLE
-VERTICAL ALIGN WORKS PERFECTLY*/
-#developer .num .num-content{
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-#developer .num span{
-  display: block;
-  font-size: 15px;
-  font-weight: normal;
-}
-
-.social{
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100% ;
-  padding: 10px;
-}
-
-.social-icons{
-  padding-top: 15px;
-}
 
 .btn{
   font-weight: bold;
@@ -178,7 +127,7 @@ button, input, .btn, a.btn{
 
 }
 #whatIsWordpress,#whoBenefits,#wordpress-feautures,#final-features,
-#youtube-video,#developer {
+#youtube-video,#developer,#kudos {
   padding: 30px 0px 40px 0px;
 }
 
@@ -235,6 +184,85 @@ i.features-sprites {
   background-color: white;
 }
 
+.testimonials{
+  padding-top: 10px;
+}
+
+blockquote cite{
+  display: block;
+  margin-top: 20px;
+}
+
+.badge.social.linkedin {
+  &:hover {
+    background-color: darken(blue, 5%);
+  }
+}
+.badge.social.github {
+  &:hover {
+    background-color: darken(mediumpurple, 25%);
+  }
+}
+
+.num{
+  display: table;
+  background-color: $orange;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100% ;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  height: 140px;
+  width: 140px;
+  @include sexyText;
+  margin: 0 auto;
+}
+
+#signup{
+  padding: 150px 0 150px 0;
+}
+
+/*WITH THIS TRICK AND IF THE PARENT OF .num-content IS DISPLAY TABLE
+VERTICAL ALIGN WORKS PERFECTLY*/
+#developer .num .num-content{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#developer .num span{
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.social{
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100% ;
+  padding: 10px;
+}
+
+.social-icons{
+  padding-top: 15px;
+}
+
+.skilled{
+  padding-left: 30px;
+}
+
+#signup{
+  background: url('../img/hipster-stuff.jpg') center center fixed;
+  color: white;
+  text-align: center;
+}
+
+
+
+
 
 
 
@@ -256,9 +284,11 @@ i.features-sprites {
     font-size: 1.1em;
   }
 
+  .num-content{
 
-  #developer{
-    text-align: center;
+  }
+  .skilled{
+    padding: 30px 30px 0px 30px ;
   }
 
   .developer-name{
@@ -269,7 +299,29 @@ i.features-sprites {
     margin-top: 20px;
   }
 
+  #kudos,.testimonials{
+    text-align: center;
+  }
 
+  .num{
+
+
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    height: 90px;
+    width: 90px;
+    @include sexyText;
+    margin: 0 auto;
+  }
+
+  #developer .num span{
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+  }
 
 }
 
@@ -306,6 +358,10 @@ i.features-sprites {
 
   .lead{
     margin-top: 0px;
+  }
+
+  .developer-image{
+    margin-top: 20px;
   }
 }
 /* Large screens layout*/
