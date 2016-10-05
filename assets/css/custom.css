@@ -230,6 +230,17 @@ VERTICAL ALIGN WORKS PERFECTLY*/
   color: white;
   text-align: center; }
 
+footer {
+  background-color: #3e4249;
+  color: white; }
+
+#backToTop {
+  padding: 0;
+  line-height: 22px; }
+
+.footer-logo {
+  padding-left: 0px; }
+
 /* Small screens layout*/
 @media screen and (max-width: 767px) {
   .price {

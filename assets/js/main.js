@@ -23,5 +23,13 @@ $(document).ready(function () {
 
     });
 
+    //Back to top event with animation using jQuery scrollTop method
+    $('#backToTop').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+
 
 });
