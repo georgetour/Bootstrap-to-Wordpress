@@ -5,12 +5,13 @@
   border :1px solid black;
 }
 html {
-
+  height: 100%;
 }
 /*Body layout*/
 body{
+  min-height: 100%;
   @include bodyLayout;
-
+  padding:0;margin:0;
 }
 
 /*Headers layout*/
@@ -186,6 +187,7 @@ i.features-sprites {
 
 .testimonials{
   padding-top: 10px;
+  margin:10px;
 }
 
 blockquote cite{
@@ -193,12 +195,44 @@ blockquote cite{
   margin-top: 20px;
 }
 
-.badge.social.linkedin {
+
+
+
+.badge.social{
+  background: #ccc;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #777;
+  border-radius: 10px;
+}
+.badge.linkedin {
   &:hover {
     background-color: darken(blue, 5%);
   }
 }
-.badge.social.github {
+.badge.github {
   &:hover {
     background-color: darken(mediumpurple, 25%);
   }
@@ -223,6 +257,10 @@ blockquote cite{
 
 #signup{
   padding: 150px 0 150px 0;
+  background: url('../img/hipster-stuff.jpg') center center fixed;
+  color: white;
+  text-align: center;
+
 }
 
 /*WITH THIS TRICK AND IF THE PARENT OF .num-content IS DISPLAY TABLE
@@ -239,30 +277,25 @@ VERTICAL ALIGN WORKS PERFECTLY*/
   font-weight: normal;
 }
 
-.social{
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100% ;
-  padding: 10px;
-}
 
-.social-icons{
-  padding-top: 15px;
-}
+
 
 .skilled{
   padding-left: 30px;
+  margin-top: 15px;
 }
 
-#signup{
-  background: url('../img/hipster-stuff.jpg') center center fixed;
-  color: white;
-  text-align: center;
-}
+
 
 footer{
+  height: 50px;
+  padding-top: 15px;
   background-color: $bluegray;
+  text-align: center;
   color: white;
+
+
+
 }
 
 
@@ -274,6 +307,8 @@ footer{
 .footer-logo{
   padding-left: 0px;
 }
+
+
 
 
 
@@ -298,9 +333,7 @@ footer{
   .num-content{
 
   }
-  .skilled{
-    padding: 30px 30px 0px 30px ;
-  }
+
 
   .developer-name{
     text-align: left;
@@ -315,8 +348,6 @@ footer{
   }
 
   .num{
-
-
     font-size: 15px;
     font-weight: bold;
     text-align: center;

@@ -23,40 +23,11 @@
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 
-
-
 </head>
-
 <body>
 
-<!-- HEADER------------------------->
-<header class="site-header" role="banner">
-    <!--NAVBAR------->
-   <div class="navbar-wrapper">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
-                    <!--with sr-only class will show only to screen readers-->
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/"><img class="img-logo img-responsive" src="assets/img/logo-top.png"></a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="http://www.besmartbesimple.com/">Back to besmartbesimple.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-   </div><!--End navbar-->
-</header>
+<?php include 'header.php'?>
+
 
 <!-- HERO -------------------------->
 <section id="hero" data-type="background" data-speed="2" style="background-position: 50% 0px;">
@@ -89,7 +60,7 @@
                                 <div class="price-sphere"> Free Quote!</div>
                             </h4>
                         </div>
-                        <p style="margin-top: 70px"><a class="btn btn-lg btn-danger" href="index.html" role="button">Enroll &raquo;</a></p>
+                        <p style="margin-top: 70px"><a class="btn btn-lg btn-danger" href="index.php" role="button">Enroll &raquo;</a></p>
                     </div><!--Right column end-->
 
                 </div>
@@ -265,21 +236,21 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="row">
             <div class="col-md-8 "><!--Left column--->
-                <div class="col-lg-9 col-xs-8 ">
+                <div class="row">
+                <div class="col-md-9 col-xs-9 ">
                     <h2 style="margin-bottom: 0" class="displayInlineBlock developer-name">Your developer </h2>
                     <h2 class="developer-name"><small>George Tourtsinakis</small></h2>
-
                 </div>
-                <div class="col-lg-3 col-xs-4 social-icons align-center">
-                    <a class="badge  social linkedin" href="https://gr.linkedin.com/in/georgetourtsinakis" target="_blank">
+                <div class="col-md-3 col-xs-3 ">
+                    <a class="badge social linkedin" href="https://gr.linkedin.com/in/georgetourtsinakis" target="_blank">
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a class="badge  social github" href="https://github.com/georgetour" target="_blank">
+                    <a class="badge social github" href="https://github.com/georgetour" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
                 </div>
+                </div>
             </div>
-
             <div class=" col-md-4  developer-image"><!--Right column--->
                 <img style="width: 50%" class="img-responsive img-center" src="assets/img/myphoto.jpg" alt="Developer George Tourtsinakis">
             </div>
@@ -379,8 +350,9 @@
 </section>
 
 <!-- FOOTER -------------------------->
+<div style="background-color: red">
 <footer>
-    <div style="padding: 15px" class="container">
+    <div class="container">
         <div class=" col-sm-3 footer-logo">
             <p><a href="/"><img style="padding-left: -55px" class="img-logo img-responsive" src="assets/img/logo-top.png" alt="Test Wordpress"></a></p>
         </div>
@@ -392,9 +364,9 @@
                 </ul>
             </nav>
         </div>
-
     </div>
 </footer><!--End footer----------------->
+</div>
 
 <!-- MODAL ----------------------->
 <div class="modal fade" id="myModal">

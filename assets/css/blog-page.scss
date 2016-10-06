@@ -1,0 +1,21 @@
+//Our imports
+@import "variables";
+@import "mixins";
+
+body{
+  @include bodyLayout;
+
+}
+
+#blog-top{
+  background: url('../img/hipster-stuff.jpg') center center fixed;
+  margin-top: 50px;
+  height: 150px;
+  line-height: 150px;
+  color: white;
+
+}
+
+.top-header{
+  padding: 50px 0 0px 0;
+}
