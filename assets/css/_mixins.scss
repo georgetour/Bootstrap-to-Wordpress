@@ -83,3 +83,17 @@
   border: 1px solid black;
 }
 
+@mixin post-comments-badge{
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  right: 25px;
+  top:25px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: $green;
+  display: table;
+  text-align: center;
+}
+

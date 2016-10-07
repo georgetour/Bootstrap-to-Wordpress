@@ -30,7 +30,7 @@
 
 
 <!-- HERO -------------------------->
-<section id="hero" data-type="background" data-speed="2" style="background-position: 50% 0px;">
+<section id="hero" class="section-padding" data-type="background" data-speed="2" style="background-position: 50% 0px;">
     <article >
         <div class="container clearfix">
             <div class="row">
@@ -70,7 +70,7 @@
 </section><!--End hero---------------->
 
 <!-- Quote line SECTION ------------------------->
-<section id="quoteLine" >
+<section id="quoteLine" class="section-padding">
     <div class="container ">
         <div class="row">
             <div  class="col-lg-7">
@@ -86,7 +86,7 @@
 </section><!-- End Quote line section------------->
 
 <!-- What is wordpress ---------------------------->
-<section id="whatIsWordpress">
+<section id="whatIsWordpress" class="section-padding">
     <article>
     <div class="container">
         <div class="section-header">
@@ -117,7 +117,7 @@
 </section><!--End what is wordpress---------------->
 
 <!--WHO BENEFITS ----------------------------------->
-<section id="whoBenefits" class="align-center">
+<section id="whoBenefits" class="align-center section-padding">
     <div class="container">
         <div class="row">
         <div class="section-header col-lg-8 col-lg-offset-2"><!--Using bootstrap offset technique--->
@@ -143,7 +143,7 @@
 
 
 <!--Wordpress FEATURES  --------------->
-<section id="wordpress-feautures">
+<section id="wordpress-feautures" class="section-padding">
     <div class="container ">
         <div class="section-header">
         <h2>Wordpress features</h2>
@@ -178,7 +178,7 @@
 
 
 <!-- PROJECT FEATURES  ---------------------->
-<section id="final-features">
+<section id="final-features" class="section-padding">
     <div class="container">
         <div class="section-header">
             <h2>Final site features</h2>
@@ -217,7 +217,7 @@
 </section>
 
 <!-- YOUTUBE VIDEO ------------------------>
-<section id="youtube-video">
+<section id="youtube-video" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 align-center">
@@ -230,7 +230,7 @@
 
 
 <!-- THE Developer  ---------------------------->
-<section id="developer">
+<section id="developer" class="section-padding">
     <div class="container ">
     <div class="row"><!--Developer row---------------------------------->
         <div class="col-md-10 col-md-offset-1">
@@ -293,7 +293,7 @@
 </section><!--End developer section------------->
 
 <!-- TESTIMONIALS-------------------------->
-<section id="kudos" >
+<section id="kudos" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 ">
@@ -338,7 +338,7 @@
 </section><!-- End TESTIMONIALS----------------->
 
 <!-- SIGN UP ----------------------------->
-<section id="signup" data-type="background" data-speed="4">
+<section id="signup" data-type="background" data-speed="4" class="section-padding">
     <div class="container">
         <div class="row align-center">
             <div class="col-sm-12">
@@ -350,13 +350,13 @@
 </section>
 
 <!-- FOOTER -------------------------->
-<div style="background-color: red">
 <footer>
     <div class="container">
+        <div class="row">
         <div class=" col-sm-3 footer-logo">
-            <p><a href="/"><img style="padding-left: -55px" class="img-logo img-responsive" src="assets/img/logo-top.png" alt="Test Wordpress"></a></p>
+            <p><a  href="/"><img class="img-logo img-responsive" src="assets/img/logo-top.png" alt="Test Wordpress logo"></a></p>
         </div>
-        <div style="padding-right:5px;margin: 0 " class="col-sm-9">
+        <div  class="col-sm-9">
             <nav>
                 <ul  class="list-unstyled list-inline pull-right">
                     <li>Created by George Tourtsinakis</li>
@@ -364,9 +364,10 @@
                 </ul>
             </nav>
         </div>
-    </div>
+        </div>
+    </div><!--End footer container------->
 </footer><!--End footer----------------->
-</div>
+
 
 <!-- MODAL ----------------------->
 <div class="modal fade" id="myModal">
@@ -412,7 +413,7 @@
     </div><!--modal dialog-------->
 </div><!--End Modal--------------->
 
-<!--BOOTSTRAP CORE JAVASCRIPT-->
+<!--BOOTSTRAP CORE JAVASCRIPT and our javascript-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="assets/js/jquery-2.2.4.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
