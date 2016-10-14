@@ -291,7 +291,7 @@ a {
     color: #9a5008;
     text-decoration: none; }
 
-.post {
+.post, .widget {
   border: 1px solid #dddddd;
   position: relative;
   background-color: white;
@@ -299,6 +299,23 @@ a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
+
+.widget {
+  padding: 20px; }
+  .widget h4 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ddd; }
+  .widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .widget ul li {
+      margin: 0 0 5px; }
+      .widget ul li:hover {
+        position: relative;
+        left: 2px;
+        color: #9a5008; }
 
 .post header, .post .post-excerpt {
   padding: 20px; }
@@ -351,8 +368,17 @@ a {
 
 /*=========== BLOG LAYOUT END ==============>
 
-
-
+/*==========Forms=====*/
+input, textarea {
+  color: #666666;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px; }
 
 /* Small screens layout*/
 @media screen and (max-width: 767px) {

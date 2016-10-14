@@ -20,8 +20,8 @@
     <!-- Custom CSS -->
     <link href="assets/css/custom.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>-->
 </head>
 <body class="blog">
 
@@ -163,9 +163,61 @@
                     </p>
                 </div>
             </article><!--End post-->
-
-
         </main><!--End main------>
+
+        <!--SIDEBAR-------------->
+        <aside class="col-sm-4">
+            <div class="widget">
+                <h4>Let's create your site!</h4>
+                <p>It will be managed by YOU!</p>
+                <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+                Start!
+                </button>
+            </div><!--Widget---->
+
+            <div class="widget">
+                <form role="form" class="search-form">
+                    <label for="#sidebar-search" class="sr-only"></label>
+                    <input id="sidebar-search" type="text" placeholder="Search the blog...">
+                </form>
+            </div><!--Widget---->
+
+            <div class="widget">
+                <h4>About Test Wordpress Live</h4>
+                <p>Lorem ipsum dolor sit amet, ne aliquam dolores mnesarchum sit,
+                    errem accusamus vel cu, per ad nibh tota nulla.
+                    Nisl facer instructior ut eum, his ad errem epicuri complectitur.
+                    Id vide duis patrioque vel. Pri ne feugiat dissentias,
+                    mea ut fastidii copiosae prodesset. Ea aeterno aliquam perfecto eam,
+                    eum malis rationibus ea.</p>
+
+
+            </div><!--Widget---->
+
+            <div class="widget">
+                <h4>Recent Posts</h4>
+                <ul>
+                    <li><a href="#">Blog post #1</a></li>
+                    <li><a href="#">Blog post #2</a></li>
+                    <li><a href="#">Blog post #3</a></li>
+                    <li><a href="#">Blog post #4</a></li>
+                    <li><a href="#">Blog post #5</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Category #1</a></li>
+                    <li><a href="#">Category #2</a></li>
+                    <li><a href="#">Category #3</a></li>
+                    <li><a href="#">Category #4</a></li>
+                    <li><a href="#">Category #5</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
 
     </div><!--End row------------>
 </div><!--End container---------->
