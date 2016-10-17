@@ -233,8 +233,9 @@ blockquote cite {
   margin: 0 auto; }
 
 #signup {
-  padding: 150px 0 150px 0;
-  background: url("../img/hipster-stuff.jpg") center center fixed;
+  padding: 150px 0;
+  background: url("../img/hipster-stuff.jpg") center center repeat fixed;
+  background-size: cover;
   color: white;
   text-align: center; }
 
@@ -273,12 +274,18 @@ footer {
   padding: 40px 0 40px 0; }
 
 .top-image {
-  background: url(../img/hipster-stuff.jpg) no-repeat;
-  background-size: cover;
   color: white;
   display: table;
   width: 100%;
   height: 200px; }
+
+.feature-image-default {
+  background: url("../img/stuff-feature.jpg") no-repeat;
+  background-size: cover; }
+
+.feature-image-default-alt {
+  background: url(../img/hipster-stuff.jpg) no-repeat;
+  background-size: cover; }
 
 .top-header {
   display: table-cell;
@@ -391,7 +398,14 @@ a {
   margin: 40px 0 0;
   padding: 20px 0 0; }
 
-/*=========== BLOG LAYOUT END ==============>
+/*=========== BLOG LAYOUT END ==============>*/
+/*Resources page ========================>*/
+.resource {
+  float: left;
+  width: 31.333333%;
+  margin: 0 3% 40px 0; }
+  .resource:nth-child(3n) {
+    margin-right: 0; }
 
 /*==========Forms=====*/
 input, textarea {
@@ -445,6 +459,10 @@ input, textarea {
     display: block;
     font-size: 10px;
     font-weight: normal; }
+
+  .resource {
+    width: 100%;
+    text-align: center; }
 
   footer {
     height: 100%; } }

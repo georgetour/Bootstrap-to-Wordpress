@@ -49,14 +49,13 @@
                         <li><a href="http://www.besmartbesimple.com/">Back to besmartbesimple.com</a></li>
                     </ul>
                 </div>
-
-        </div>
+            </div>
     </nav>
     </div><!--End navbar-->
 </header><!--End header------------------------->
 
 <!--Top Image-------------->
-<section class="top-image" data-type="background" data-speed="2">
+<section class="top-image feature-image-default-alt" data-type="background" data-speed="2">
     <h1 class="top-header">Your first blog</h1>
 </section><!--End top image--->
 
