@@ -291,7 +291,7 @@ a {
     color: #9a5008;
     text-decoration: none; }
 
-.post, .widget {
+.post, .widget, #comments {
   border: 1px solid #dddddd;
   position: relative;
   background-color: white;
@@ -317,7 +317,7 @@ a {
         left: 2px;
         color: #9a5008; }
 
-.post header, .post .post-excerpt {
+.post header, .post-excerpt, .post-body, #comments .comments-wrap {
   padding: 20px; }
 
 .post header h3, .post header h1 {
@@ -365,6 +365,31 @@ a {
     margin-bottom: 4px; }
   .post-comments-badge:hover {
     background-color: #93c364; }
+
+#comments h3 {
+  text-align: center; }
+#comments h4 {
+  font-size: 1.3em; }
+#comments ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  #comments ol li {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+#comments ol.children {
+  padding: 0;
+  list-style: none;
+  font-size: 0.96em; }
+
+#leave-comment {
+  margin: 40px 0 0;
+  padding: 20px 0 0; }
 
 /*=========== BLOG LAYOUT END ==============>
 
