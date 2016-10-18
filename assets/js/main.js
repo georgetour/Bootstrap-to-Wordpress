@@ -32,4 +32,31 @@ $(document).ready(function () {
     });
 
 
+    //According to full path we will add active class to where we are
+    var location = window.location.pathname;
+    console.log(location);
+
+    function activeClassOnly(addClassTo,removeClassFrom){
+        $(addClassTo).addClass('active');
+        $(removeClassFrom).removeClass('active');
+    };
+
+    switch(location){
+        case '/Wordpress-Live-Test/index.php':
+        case '/Wordpress-Live-Test/':
+            activeClassOnly('ul li:nth-child(1)','ul > li:nth-child(2),ul > li:nth-child(3)');
+            break;
+
+        case '/Wordpress-Live-Test/blog.php':
+        case  '/Wordpress-Live-Test/post.php':
+            activeClassOnly('ul li:nth-child(2)','ul > li:nth-child(1),ul > li:nth-child(3)');
+            break;
+
+        case '/Wordpress-Live-Test/resources.php':
+            activeClassOnly('ul li:nth-child(3)',('ul > li:nth-child(2),ul > li:nth-child(1)'));
+            break;
+    }
+    //End active class according to location
+
+
 });

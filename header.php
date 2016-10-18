@@ -16,10 +16,10 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="blog.php">Blog</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="http://www.besmartbesimple.com/">Back to besmartbesimple.com</a></li>
+                        <li ><a href="index.php">Home</a></li>
+                        <li ><a href="post.php">Blog</a></li>
+                        <li ><a href="resources.php">Resources</a></li>
+                        <li><a href="http://www.besmartbesimple.com/">Find me at besmartbesimple.com</a></li>
                     </ul>
                 </div>
             </div>

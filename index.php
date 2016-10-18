@@ -20,8 +20,8 @@
     <!-- Custom CSS -->
     <link href="assets/css/custom.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>-->
 
 </head>
 <body>

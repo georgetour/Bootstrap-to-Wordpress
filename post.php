@@ -26,34 +26,8 @@
 <body class="blog">
 
 <!-- HEADER------------------------->
-<header class="site-header" role="banner">
-    <!--NAVBAR------->
-    <div class="navbar-wrapper">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
-                        <!--with sr-only class will show only to screen readers-->
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/"><img class="img-logo img-responsive" src="assets/img/logo-top.png"></a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.php">Home</a></li>
-                        <li class="active"><a href="blog.php">Blog</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="http://www.besmartbesimple.com/">Back to besmartbesimple.com</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-    </div><!--End navbar-->
-</header><!--End header------------------------->
+<?php include 'header.php'?>
+<!--End header------------------------->
 
 <!-- Main Content--------------
 ================================ -->
@@ -62,7 +36,7 @@
         <div id="content" class="col-sm-8">
             <article class="post">
                 <header>
-                    <h3><a href="post.html">Blog title here</a></h3>
+                    <h3><a href="post.php">Blog title here</a></h3>
 
                     <div class="post-details">
                         <i class="fa fa-user"></i> GeorgeTourtsinakis

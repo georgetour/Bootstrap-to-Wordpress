@@ -419,6 +419,9 @@ input, textarea {
   box-sizing: border-box;
   padding: 6px 12px; }
 
+input[type="submit"]:hover {
+  background-color: #c4c4c4; }
+
 /* Small screens layout*/
 @media screen and (max-width: 767px) {
   .price {
