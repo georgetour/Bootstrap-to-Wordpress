@@ -1,1 +1,1 @@
-This the static layout for a Wordpress theme with Bootsrap.
+This the static layout for a Wordpress theme with Bootstrap.
